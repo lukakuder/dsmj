@@ -1,6 +1,7 @@
 import './App.css'
 import { QA } from './components/QA'
 import { Highlight } from './components/Highlight'
+import { BlockHighlight } from './components/BlockHighlight'
 
 function App() {
   return (
@@ -11,11 +12,11 @@ function App() {
 
         <h2>1. Osnovne stvari</h2>
 
-          {/* <Callout kind="highlight"><p>To je nek highlight.</p></Callout>
-          <Callout kind="important"><p>To je neki pomembnega.</p></Callout>
-          <Callout kind="warning"><p>To je neko opozorilo.</p></Callout>
-          <Callout kind="success"><p>To je neki uspesnega.</p></Callout>
-          <Callout kind="summary"><p>To je nek blok besedila.</p></Callout> */}
+          <BlockHighlight version="highlight"><p>To je nek highlight.</p></BlockHighlight>
+          <BlockHighlight version="important"><p>To je neki pomembnega.</p></BlockHighlight>
+          <BlockHighlight version="warning"><p>To je neko opozorilo.</p></BlockHighlight>
+          <BlockHighlight version="success"><p>To je neki uspesnega.</p></BlockHighlight>
+          <BlockHighlight version="summary"><p>To je nek blok besedila.</p></BlockHighlight>
 
           <Highlight version="highlight">Tole bi bil highlight</Highlight>
           <Highlight version="important">Tole bi bil highlight</Highlight>
