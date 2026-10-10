@@ -10,7 +10,7 @@ const VERSIONS = {
 
 export function BlockHighlight({ version, children }: { version: keyof typeof VERSIONS; children: ReactNode }) {
   return (
-    <div className={`flex items-start gap-2 border-l-8 px-2 py-1.5 ${VERSIONS[version]}`}>
+    <div className={`flex items-start gap-2 border-l-8 px-2 py-2 my-4 [&>:first-child]:mt-0! [&>:last-child]:mb-0! ${VERSIONS[version]}`}>
       {children}
     </div>
   );
